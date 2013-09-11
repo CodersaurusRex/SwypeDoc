@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/workspace"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:baselineAligned="false"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <fragment
+        android:id="@+id/canvas_fragment"
+        android:name="nz.ac.waikato.cms.spaceys.Canvas"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:layout="@layout/canvas" />
+
+    <fragment
+        android:id="@+id/module_fragment"
+        android:nnz.ac.waikato.cms.spaceys.Modulesdules"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        tools:layout="@layout/modules" />
+
+</LinearLayout>
